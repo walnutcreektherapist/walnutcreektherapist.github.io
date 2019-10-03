@@ -1,4 +1,4 @@
-## Welcome to Walnut Creek Therapy
+## Welcome to Walnut Creek Therapist
 
 You can use the [editor on GitHub](https://github.com/nefariouslacker/escape-from-kaiser/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
