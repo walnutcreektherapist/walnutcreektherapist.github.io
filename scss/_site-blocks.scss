@@ -46,6 +46,7 @@
 		bottom: 0;
 		z-index: 1;
 		max-width: 950px;
+        top: -13%;
 		@include media-breakpoint-down(md) {
 			right: -25%;
 		}
