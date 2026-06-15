@@ -1,0 +1,42 @@
+---
+layout: default
+title: "Contact & Fees | Matthew Rojo, LMFT — Walnut Creek"
+description: "Book a free consultation with Matthew Rojo, LMFT in Walnut Creek, CA. Hours, fees, and how to get started with couples or individual therapy."
+permalink: /contact/
+faqs:
+  - q: "How do I get started?"
+    a: "Book a free 15-minute consultation through the scheduler, or call (925) 315-8205. We'll figure out together whether I'm the right fit."
+  - q: "What are your hours?"
+    a: "Weekdays, 10am to 9pm."
+  - q: "Do you accept insurance?"
+    a: "No insurance is accepted; the practice is private-pay. Individual sessions are $275 per clinical hour and couples are $305. A superbill is available for out-of-network reimbursement, and you can pay with an HSA or FSA card."
+---
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h1>Get started</h1>
+    <p class="lede">Book a free 15-minute consultation, or call to ask anything before you decide.</p>
+    <div class="facts">
+      <div><div class="label">Office</div>{{ site.address.street }}<br>{{ site.address.city }}, {{ site.address.region }} {{ site.address.zip }}</div>
+      <div><div class="label">Phone</div><a href="tel:{{ site.phone_e164 }}">{{ site.phone }}</a></div>
+      <div><div class="label">Hours</div>{{ site.hours }}</div>
+      <div><div class="label">Sessions</div>Couples in person · individuals in person or video</div>
+    </div>
+    <div class="facts">
+      <div><div class="label">Individual</div>{{ site.fees.individual }}</div>
+      <div><div class="label">Couples</div>{{ site.fees.couples }}</div>
+      <div><div class="label">Insurance</div>Private-pay · superbill &amp; HSA/FSA</div>
+    </div>
+    <div class="tickrule short"></div>
+  </div>
+</section>
+
+<section class="band"><div class="wrap">{% include cta.html %}</div></section>
+
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow">Common questions</p>
+    <h2>Frequently asked</h2>
+    {% include faq.html %}
+  </div>
+</section>

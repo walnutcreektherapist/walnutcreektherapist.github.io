@@ -1,1 +1,51 @@
-theme: jekyll-theme-cayman
+title: "Walnut Creek Therapists"
+tagline: "Measured therapy. Real skills. Honest answers."
+description: "Measured, skills-based couples and individual therapy in Walnut Creek, CA. EMDR for anxiety and trauma, adult ADHD, and couples work — in person and online across California."
+url: "https://walnutcreektherapists.com"
+
+therapist_name: "Matthew Rojo"
+credential: "LMFT"
+license: "MFC46949"            # verify on CA BBS; your live site shows 46949
+phone: "(925) 315-8205"
+phone_e164: "+19253158205"
+booking_url: "https://matthew-lindgren.clientsecure.me"
+
+address:
+  street: "1535 North Main Street, Suite 250"
+  city: "Walnut Creek"
+  region: "CA"
+  zip: "94596"
+
+hours: "Weekdays 10am to 9pm"
+fees:
+  individual: "$275 per clinical hour"
+  couples: "$305 per clinical hour"
+
+# Paste your exact Psychology Today and Facebook URLs to finish consolidating your identity.
+same_as:
+  - "https://www.yelp.com/biz/matthew-lindgren-lmft-walnut-creek"
+  - "https://www.instagram.com/matthewlindgrenrojolmft/"
+
+nav:
+  - { title: "Couples", url: "/couples-therapy/" }
+  - { title: "Anxiety & trauma", url: "/anxiety-trauma-emdr/" }
+  - { title: "ADHD", url: "/adhd/" }
+  - { title: "About", url: "/about/" }
+  - { title: "Contact", url: "/contact/" }
+
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+exclude:
+  - README.md
+
+# Legal-name disclosure (CAMFT). Leave blank until the court approves your name change.
+# When approved, set to "Matthew Lindgren" and a discreet footer line appears.
+legal_name: ""
+corporation: "Walnut Creek Therapists, A Professional Marriage and Therapy Corporation, doing business as Walnut Creek Therapists, Inc."
+
+# Reviews — links out only (no review text reproduced on-site). Verify which Yelp listing holds your reviews.
+reviews:
+  yelp_url: "https://www.yelp.com/biz/walnut-creek-therapists-walnut-creek"
+  google_url: "https://g.co/kgs/oGAfbPh"
+  blurb: "Rated 4.9 on Yelp"

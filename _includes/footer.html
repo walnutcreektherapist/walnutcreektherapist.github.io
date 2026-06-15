@@ -1,0 +1,15 @@
+<footer class="site">
+  <div class="wrap frow">
+    <span><strong class="fname">{{ site.therapist_name }}, {{ site.credential }}</strong> · #{{ site.license }}</span>
+    <span>{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.zip }}</span>
+    <span><a href="tel:{{ site.phone_e164 }}">{{ site.phone }}</a></span>
+    {% if site.legal_name %}<span>{{ site.therapist_name }} is the professional name of {{ site.legal_name }}, {{ site.credential }}.</span>{% endif %}
+    <span class="classes">Online couples classes — coming soon.</span>
+    <span class="legalese">© 2026 {{ site.corporation }}</span>
+  </div>
+</footer>
+<script>
+  var burger=document.querySelector('.burger'),menu=document.getElementById('menu');
+  if(burger){burger.addEventListener('click',function(){var o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o?'true':'false');});
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open');burger.setAttribute('aria-expanded','false');});});}
+</script>
