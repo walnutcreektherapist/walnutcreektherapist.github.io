@@ -135,3 +135,32 @@ footer.site .legalese{width:100%;margin-top:8px;color:var(--ink-soft);opacity:.8
 .rec{margin:0;background:var(--card);border:1px solid var(--line);border-top:3px solid var(--sage);border-radius:3px;padding:24px 22px;}
 .rec blockquote{margin:0 0 12px;font-family:var(--serif);font-size:1.08rem;line-height:1.4;color:var(--forest);font-style:italic;}
 .rec figcaption{font-size:.9rem;color:var(--ink-soft);font-weight:500;}
+
+/* --- visual rhythm + measured signature (design pass) --- */
+.band--sage{background:#E8EBE1;}
+.band--forest{background:var(--forest);border-top:none;}
+.band--forest .eyebrow{color:#9DB0A0;}
+.band--forest h2{color:#F4F1EA;}
+.band--forest .welcome,.band--forest p,.band--forest .lead-para{color:#E5E2D8;}
+
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:50px;align-items:center;}
+.measure-card{background:var(--card);border:1px solid var(--line);border-radius:5px;padding:22px 22px 20px;box-shadow:0 18px 40px -28px rgba(47,61,51,.55);}
+.measure-card .vlabel{font-size:.7rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--brass);margin:0 0 12px;}
+.measure-card svg{display:block;width:100%;height:auto;}
+.measure-card .vcap{margin:14px 0 0;font-size:.9rem;color:var(--ink-soft);line-height:1.5;}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:34px;}}
+
+.pillar{border-top:1px solid var(--line);padding-top:18px;}
+.pillar::before{content:"";display:block;width:38px;height:8px;margin-bottom:14px;background-image:repeating-linear-gradient(to right,var(--brass) 0,var(--brass) 1.5px,transparent 1.5px,transparent 8px);}
+
+
+/* hero portrait + couples tracking layout */
+.hero-portrait{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:14px 14px 0;box-shadow:0 20px 44px -28px rgba(47,61,51,.55);max-width:360px;width:100%;justify-self:end;}
+.hero-portrait img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 18%;border-radius:4px;}
+.hp-cap{margin:0;padding:14px 4px 16px;}
+.hp-cap strong{display:block;font-family:var(--serif);font-weight:500;color:var(--forest);font-size:1.06rem;}
+.hp-cap span{display:block;font-size:.88rem;color:var(--ink-soft);margin-top:3px;}
+.track-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:30px;}
+.track-grid h3{font-size:1.18rem;}
+@media(max-width:860px){.hero-portrait{justify-self:start;max-width:320px;}}
+@media(max-width:780px){.track-grid{grid-template-columns:1fr;gap:26px;}}

@@ -38,6 +38,12 @@ plugins:
   - jekyll-sitemap
 exclude:
   - README.md
+  - vendor/
+  - .bundle/
+  - node_modules/
+  - .devcontainer/
+  - Gemfile
+  - Gemfile.lock
 
 # Legal-name disclosure (CAMFT). Leave blank until the court approves your name change.
 # When approved, set to "Matthew Lindgren" and a discreet footer line appears.
