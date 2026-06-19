@@ -16,20 +16,22 @@ address:
   region: "CA"
   zip: "94596"
 
-hours: "Weekdays 10am to 9pm"
+hours: "Weekdays, 9am to 5:45pm"
 fees:
-  individual: "$275 per clinical hour"
-  couples: "$305 per clinical hour"
+  individual: "$275 per 50-minute hour"
+  couples: "$305 per 50-minute hour"
 
 # Paste your exact Psychology Today and Facebook URLs to finish consolidating your identity.
 same_as:
   - "https://www.yelp.com/biz/matthew-lindgren-lmft-walnut-creek"
   - "https://www.instagram.com/matthewlindgrenrojolmft/"
+  - "https://www.linkedin.com/in/matthewlrojo/"
 
 nav:
   - { title: "Couples", url: "/couples-therapy/" }
-  - { title: "Anxiety & trauma", url: "/anxiety-trauma-emdr/" }
+  - { title: "Anxiety & Trauma", url: "/anxiety-trauma-emdr/" }
   - { title: "ADHD", url: "/adhd/" }
+  - { title: "Stress & Burnout", url: "/stress-burnout/" }
   - { title: "About", url: "/about/" }
   - { title: "Contact", url: "/contact/" }
 
@@ -38,16 +40,12 @@ plugins:
   - jekyll-sitemap
 exclude:
   - README.md
-  - vendor/
-  - .bundle/
-  - node_modules/
-  - .devcontainer/
-  - Gemfile
-  - Gemfile.lock
 
 # Legal-name disclosure (CAMFT). Leave blank until the court approves your name change.
 # When approved, set to "Matthew Lindgren" and a discreet footer line appears.
 legal_name: ""
+# Online couples classes — leave blank to hide; set a line of text to show it in the footer.
+couples_classes: ""
 corporation: "Walnut Creek Therapists, A Professional Marriage and Therapy Corporation, doing business as Walnut Creek Therapists, Inc."
 
 # Reviews — links out only (no review text reproduced on-site). Verify which Yelp listing holds your reviews.

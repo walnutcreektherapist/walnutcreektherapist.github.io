@@ -41,7 +41,7 @@
       "url":"{{ site.url }}/",
       "worksFor":{"@id":"{{ site.url }}/#practice"},
       "alumniOf":"New College of California",
-      "knowsAbout":["Couples therapy","Gottman Method couples therapy","EMDR therapy","Flash technique","Cognitive behavioral therapy","Adult ADHD","PTSD treatment","Anxiety treatment","Affair and betrayal recovery","Feedback-informed treatment","Measurement-based care"],
+      "knowsAbout":["Couples therapy","Gottman Method couples therapy","EMDR therapy","Flash technique","Cognitive behavioral therapy","Adult ADHD","PTSD treatment","Anxiety treatment","Affair and betrayal recovery","Feedback-informed treatment","Measurement-based care","Stress and burnout","Self-compassion","Positive psychology measures","Phobias"],
       "sameAs":[{% for s in site.same_as %}{{ s | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}]
     }
   ]
@@ -50,5 +50,10 @@
 {% if page.faqs %}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for f in page.faqs %}{"@type":"Question","name":{{ f.q | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ f.a | jsonify }}}}{% unless forloop.last %},{% endunless %}{% endfor %}]}
+</script>
+{% endif %}
+{% if page.service_name %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","serviceType":"{{ page.service_type }}","name":"{{ page.service_name }}","description":{{ page.description | jsonify }},"url":"{{ site.url }}{{ page.url }}","provider":{"@id":"{{ site.url }}/#practice"},"areaServed":[{"@type":"City","name":"Walnut Creek"},{"@type":"State","name":"California"}],"audience":{"@type":"MedicalAudience","audienceType":"Patient"}}
 </script>
 {% endif %}

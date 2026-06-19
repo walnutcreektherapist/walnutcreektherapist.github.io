@@ -4,7 +4,7 @@
     <span>{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.zip }}</span>
     <span><a href="tel:{{ site.phone_e164 }}">{{ site.phone }}</a></span>
     {% if site.legal_name %}<span>{{ site.therapist_name }} is the professional name of {{ site.legal_name }}, {{ site.credential }}.</span>{% endif %}
-    <span class="classes">Online couples classes — coming soon.</span>
+    {% if site.couples_classes %}<span class="classes">{{ site.couples_classes }}</span>{% endif %}
     <span class="legalese">© 2026 {{ site.corporation }}</span>
   </div>
 </footer>
@@ -12,4 +12,10 @@
   var burger=document.querySelector('.burger'),menu=document.getElementById('menu');
   if(burger){burger.addEventListener('click',function(){var o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o?'true':'false');});
   menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open');burger.setAttribute('aria-expanded','false');});});}
+  var navCta=document.querySelector('.nav-cta');
+  var hero=document.querySelector('.hero, .page-hero');
+  if(navCta && hero && 'IntersectionObserver' in window && window.matchMedia('(min-width:861px)').matches){
+    navCta.classList.add('nav-cta--hidden');
+    new IntersectionObserver(function(es){es.forEach(function(e){navCta.classList.toggle('nav-cta--hidden', e.isIntersecting);});},{rootMargin:'-70px 0px 0px 0px'}).observe(hero);
+  }
 </script>

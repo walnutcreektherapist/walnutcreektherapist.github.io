@@ -1,12 +1,12 @@
 <header class="site">
   <div class="wrap nav">
-    <a class="brand" href="/">{{ site.therapist_name }}<small>{{ site.credential }} · Walnut Creek</small></a>
+    <a class="brand" href="/">{{ site.therapist_name }}<small>Walnut Creek Therapist</small></a>
     <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
     </button>
     <nav class="nav-links" id="menu" aria-label="Primary">
       {% for item in site.nav %}<a href="{{ item.url }}"{% if page.url == item.url %} class="active"{% endif %}>{{ item.title }}</a>{% endfor %}
-      <a class="btn btn-primary" href="{{ site.booking_url }}" target="_blank" rel="noopener">Book a consultation</a>
+      <a class="btn btn-primary nav-cta" href="{{ site.booking_url }}" target="_blank" rel="noopener">Book a free consultation</a>
     </nav>
   </div>
 </header>
