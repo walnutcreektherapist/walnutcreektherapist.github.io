@@ -1,5 +1,6 @@
 {% if page.faqs %}
 <div class="faq">
 {% for f in page.faqs %}<details{% if forloop.first %} open{% endif %}><summary>{{ f.q }}</summary><div class="answer">{{ f.a }}</div></details>
-{% endfor %}</div>
+{% endfor %}<details><summary>{{ site.trust_faq.q }}</summary><div class="answer">{{ site.trust_faq.a }}</div></details>
+</div>
 {% endif %}
