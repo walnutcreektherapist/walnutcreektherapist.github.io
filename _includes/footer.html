@@ -3,7 +3,7 @@
     <span><strong class="fname">{{ site.therapist_name }}, {{ site.credential }}</strong> · #{{ site.license }}</span>
     <span>{{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }} {{ site.address.zip }}</span>
     <span><a href="tel:{{ site.phone_e164 }}">{{ site.phone }}</a></span>
-    {% if site.legal_name %}<span>{{ site.therapist_name }} is the professional name of {{ site.legal_name }}, {{ site.credential }}.</span>{% endif %}
+    {% if site.legal_name and site.legal_name != "" %}<span>{{ site.therapist_name }} is the professional name of {{ site.legal_name }}, {{ site.credential }}.</span>{% endif %}
     {% if site.couples_classes %}<span class="classes">{{ site.couples_classes }}</span>{% endif %}
     <span class="legalese">© 2026 {{ site.corporation }}</span>
   </div>
