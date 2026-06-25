@@ -21,6 +21,25 @@ fees:
   individual: "$275 per 50-minute hour"
   couples: "$305 per 50-minute hour"
 
+# Standing-appointment openings. Update each Monday: change "as_of", edit the slots,
+# and adjust "pointer" to match status (e.g. "Limited availability — see current openings"
+# or "Currently full — join the waitlist"). The pointer line shows site-wide; the full list
+# lives on the Contact page. To hide the list entirely, leave slots empty.
+openings:
+  as_of: "Thursday, June 25th"
+  pointer: "Now booking new clients — see regular weekly openings"
+  slots:
+    - "Mondays at 10:15 am — every week, starting June 29"
+    - "Mondays at 4:30 pm — every two weeks, starting July 27"
+    - "Likely Taken: Mondays at 5:45 pm — every two weeks, starting July 20"
+    - "Tuesdays at 9:00 am — every week, starting June 30"
+    - "Likely Taken: Tuesdays at 10:15 am — every week, starting July 7"
+    - "Tuesdays at 11:30 am — every week, starting June 30"
+    - "Wednesdays at 12 noon — every two weeks, starting June 30"
+    - "Thursdays at 11:30 am — every two weeks, starting July 16"
+    - "Fridays at 10:15 am — every two weeks, starting July 3"
+    - "Fridays at 11:30 am — every two weeks, starting July 17"
+
 # Paste your exact Psychology Today and Facebook URLs to finish consolidating your identity.
 same_as:
   - "https://www.yelp.com/biz/matthew-lindgren-lmft-walnut-creek"

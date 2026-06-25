@@ -177,3 +177,18 @@ a.review-card p{margin:0;color:var(--ink-soft);}
 .methods li{padding-left:20px;position:relative;}
 .methods li::before{content:"";position:absolute;left:0;top:12px;width:9px;height:2px;background:var(--brass);}
 .methods a{font-weight:600;}
+
+/* ---- Availability: site-wide pointer, home trust link, Contact openings block ---- */
+.openings-pointer{margin:16px 0 0;font-size:.96rem;}
+.openings-pointer a{color:var(--brass-deep);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(169,118,47,.4);padding-bottom:1px;}
+.openings-pointer a:hover{border-bottom-color:var(--brass-deep);}
+
+.welcome-trust{margin:20px 0 0;}
+.welcome-trust a{color:#CBB68B;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(203,182,139,.45);padding-bottom:1px;}
+.welcome-trust a:hover{border-bottom-color:#CBB68B;}
+
+.openings-asof{margin:-4px 0 18px;color:var(--brass);font-weight:600;font-size:.9rem;letter-spacing:.04em;text-transform:uppercase;}
+.openings-list{list-style:none;padding:0;margin:0 0 18px;max-width:560px;}
+.openings-list li{padding:13px 2px;border-bottom:1px solid var(--line);font-size:1.06rem;color:var(--ink);}
+.openings-list li:first-child{border-top:1px solid var(--line);}
+.openings-note{color:var(--ink-soft);}

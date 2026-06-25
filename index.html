@@ -27,6 +27,7 @@ faqs:
         <a class="btn btn-primary" href="{{ site.booking_url }}" target="_blank" rel="noopener">Book a free consultation</a>
         <a class="btn btn-ghost" href="tel:{{ site.phone_e164 }}">Call {{ site.phone }}</a>
       </div>
+      {% include openings_pointer.html %}
       <p class="trust"><span>Get the help you deserve, in person, in downtown Walnut Creek.</span></p>
     </div>
     <aside class="hero-portrait">
@@ -89,6 +90,7 @@ faqs:
     <figure class="welcome-figure"><img src="/assets/img/nature.jpg" alt="Oak trees on a Northern California hillside in soft morning light"></figure>
     <p class="eyebrow">Welcome</p>
     {% include welcome.html %}
+    <p class="welcome-trust"><a href="/about/#trust">Not sure you can trust a therapist you haven't met? That's fair — here's how I think about it <span aria-hidden="true">&rarr;</span></a></p>
   </div>
 </section>
 
