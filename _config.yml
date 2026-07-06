@@ -29,11 +29,12 @@ openings:
   as_of: "Friday, June 26th"
   pointer: "Now booking new clients — see regular weekly openings"
   slots:
-    - "Mondays at 10:15 am — every week, starting July 13"
-    - "Mondays at 4:30 pm — every two weeks, starting July 13"
     - "Tuesdays at 9:00 am — every week, starting July 14"
-    - "Wednesdays at 12 noon — every two weeks, starting July 14"
-    - "Wednesdays at 3:15 pm — every week, starting July 15"
+    - "Tuesdays at 10:15 am — every week, starting July 14"
+    - "Tuesdays at 12:45 pm — every week, starting July 14"
+    - "Tuesdays at 3:15 pm — every week, starting July 28"
+    - "Wednesdays at 12 noon — every two weeks, starting July 15"
+    - "Wednesdays at 3:15 pm — every week, starting July 22"
     - "Thursdays at 11:30 am — every two weeks, starting July 16"
     - "Fridays at 11:30 am — every two weeks, starting July 17"
 
