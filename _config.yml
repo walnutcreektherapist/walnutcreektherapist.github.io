@@ -26,7 +26,7 @@ fees:
 # or "Currently full — join the waitlist"). The pointer line shows site-wide; the full list
 # lives on the Contact page. To hide the list entirely, leave slots empty.
 openings:
-  as_of: "Friday, June 26th"
+  as_of: "Monday, July 6th"
   pointer: "Now booking new clients — see regular weekly openings"
   slots:
     - "Tuesdays at 9:00 am — every week, starting July 14"
