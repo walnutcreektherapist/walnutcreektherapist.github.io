@@ -30,7 +30,8 @@ openings:
   pointer: "Now booking new clients — see regular weekly openings"
   slots:
     - "Tuesdays at 9:00 am — every week, starting July 14"
-    # - "Tuesdays at 10:15 am — every week, starting July 14"
+    - "Tuesdays at 10:15 am — every week, starting July 14"
+    - "Tuesdays at 11:30 am — every week, starting July 14"
     - "Tuesdays at 12:45 pm — every week, starting July 14"
     - "Tuesdays at 3:15 pm — every week, starting July 28"
     - "Wednesdays at 12 noon — every two weeks, starting July 15"
