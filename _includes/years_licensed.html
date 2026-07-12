@@ -1,0 +1,7 @@
+{%- assign lic_y = site.license_date | date: "%Y" | plus: 0 -%}
+{%- assign lic_md = site.license_date | date: "%m%d" | plus: 0 -%}
+{%- assign now_y = "now" | date: "%Y" | plus: 0 -%}
+{%- assign now_md = "now" | date: "%m%d" | plus: 0 -%}
+{%- assign years = now_y | minus: lic_y -%}
+{%- if now_md < lic_md -%}{%- assign years = years | minus: 1 -%}{%- endif -%}
+{{- years -}}
