@@ -1,0 +1,32 @@
+---
+layout: default
+title: "Current Openings | Walnut Creek Therapists"
+description: "Current standing-appointment openings for ongoing weekly therapy with Matthew Rojo, LMFT, in downtown Walnut Creek."
+permalink: /openings/
+noindex: true
+---
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Current Openings</p>
+    <h1>Openings for ongoing therapy</h1>
+    <p class="lede">Here are my current openings for ongoing, weekly appointments — the recurring standing time that becomes yours. A free 30-minute consultation can be booked anytime; the list below shows the ongoing slots available as of the date noted.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="{{ site.booking_url }}" target="_blank" rel="noopener">Book a free consultation</a>
+      <a class="btn btn-ghost" href="tel:{{ site.phone_e164 }}">Call {{ site.phone }}</a>
+    </div>
+    <div class="tickrule short"></div>
+  </div>
+</section>
+
+<section class="band band--sage" id="openings">
+  <div class="wrap">
+    <p class="eyebrow">Standing appointments</p>
+    <h2>Current weekly openings</h2>
+    <p class="openings-asof">As of {{ site.openings.as_of }}</p>
+    <ul class="openings-list">
+      {% for slot in site.openings.slots %}<li>{{ slot }}</li>
+      {% endfor %}
+    </ul>
+    <p class="openings-note">Don't see a time that fits? <a href="tel:{{ site.phone_e164 }}">Call {{ site.phone }}</a> or <a href="{{ site.booking_url }}" target="_blank" rel="noopener">book a consult</a> — openings shift week to week, and I keep a short waitlist.</p>
+  </div>
+</section>
