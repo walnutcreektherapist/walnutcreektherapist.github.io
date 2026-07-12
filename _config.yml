@@ -22,10 +22,25 @@ fees:
   couples: "$305 per 50-minute hour"
 
 # Standing-appointment openings. Update each week: change "as_of" and edit the slots.
-# This list renders ONLY on the unlinked /openings/ page — nothing on the site links to it,
-# so share that URL directly with prospects. To hide the list, leave slots empty.
+#
+# The /openings/ page ALWAYS exists and always shows this list. It is unlinked and noindexed,
+# so it stays private — share that URL directly with anyone you like.
+#
+# ONE TOGGLE controls whether the openings also show up publicly on the site:
+#
+#   show_public: false
+#   show_public: false
+#                            - the "Now booking..." link under the hero buttons on every page
+#                            - the full openings list on the Contact page
+#
+# Edit the "pointer" text below to match your status (e.g. "Limited availability -
+# see current openings" or "Currently full - join the waitlist").
+#
+# To hide the list everywhere, leave slots empty.
 openings:
   as_of: "Thursday, June 25th"
+  show_public: false
+  pointer: "Now booking new clients — see regular weekly openings"
   slots:
     - "Mondays at 9:00 am — every week, starting June 16"
     - "Mondays at 10:15 am — every week, starting June 15"

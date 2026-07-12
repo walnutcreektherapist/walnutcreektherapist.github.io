@@ -26,6 +26,7 @@ permalink: /about/
           <a class="btn btn-ghost" href="{{ site.reviews.yelp_url }}" target="_blank" rel="noopener">Read reviews on Yelp</a>
           <a class="btn btn-ghost" href="{{ site.reviews.google_url }}" target="_blank" rel="noopener">Read reviews on Google</a>
         </div>
+        {% if site.openings.show_public %}{% include openings_pointer.html %}{% endif %}
       </div>
     </div>
     <figure class="office-figure">

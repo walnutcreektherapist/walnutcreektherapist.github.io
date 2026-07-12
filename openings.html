@@ -18,15 +18,4 @@ noindex: true
   </div>
 </section>
 
-<section class="band band--sage" id="openings">
-  <div class="wrap">
-    <p class="eyebrow">Standing appointments</p>
-    <h2>Current weekly openings</h2>
-    <p class="openings-asof">As of {{ site.openings.as_of }}</p>
-    <ul class="openings-list">
-      {% for slot in site.openings.slots %}<li>{{ slot }}</li>
-      {% endfor %}
-    </ul>
-    <p class="openings-note">Don't see a time that fits? <a href="tel:{{ site.phone_e164 }}">Call {{ site.phone }}</a> or <a href="{{ site.booking_url }}" target="_blank" rel="noopener">book a consult</a> — openings shift week to week, and I keep a short waitlist.</p>
-  </div>
-</section>
+{% include openings_block.html %}

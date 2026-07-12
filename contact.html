@@ -20,6 +20,7 @@ faqs:
       <a class="btn btn-primary" href="{{ site.booking_url }}" target="_blank" rel="noopener">Book a free consultation</a>
       <a class="btn btn-ghost" href="tel:{{ site.phone_e164 }}">Call {{ site.phone }}</a>
     </div>
+    
     <figure class="office-figure" style="margin:24px 0 8px;">
       <img src="/assets/img/office.jpg" alt="The Walnut Creek Therapists office building at 1535 North Main Street in downtown Walnut Creek">
     </figure>
@@ -37,6 +38,8 @@ faqs:
     <div class="tickrule short"></div>
   </div>
 </section>
+
+{% if site.openings.show_public %}{% include openings_block.html %}{% endif %}
 
 <section class="band">
   <div class="wrap">

@@ -31,6 +31,7 @@ faqs:
       <a class="btn btn-primary" href="{{ site.booking_url }}" target="_blank" rel="noopener">Book a free consultation</a>
       <a class="btn btn-ghost" href="tel:{{ site.phone_e164 }}">Call {{ site.phone }}</a>
     </div>
+    {% if site.openings.show_public %}{% include openings_pointer.html %}{% endif %}
     <div class="tickrule short"></div>
   </div>
 </section>
