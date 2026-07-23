@@ -44,22 +44,18 @@ fees:
 #
 # To hide the list everywhere, leave slots empty.
 openings:
-  as_of: "Sunday, July 12th"
-  show_public: false
+  as_of: "Thursday, July 23th"
+  show_public: true
   pointer: "Now booking new clients — see regular weekly openings"
   slots:
-    - "Mondays at 10:15 am — every week, starting July 20" 
-    - "Mondays at 3:15 pm — every week, starting July 20" 
-    - "Tuesdays at 9:00 am — every week, starting July 21"
-    - "Tuesdays at 10:15 am — every week, starting July 28"
-    - "Tuesdays at 11:30 am — every week, starting July 21"
-    - "Tuesdays at 12:45 pm — every week, starting July 21"
-    - "Tuesdays at 3:15 pm — every week, starting July 28"
+    - "Mondays at 10:15 am — every week, starting July 27" 
+    - "Mondays at 3:15 pm — every week, starting July 27" 
+    - "Tuesdays at 10:15 am — every two weeks, starting August 4"
+    - "Tuesdays at 11:30 am — every week, starting July 28"
     - "Wednesdays at 12 noon — every two weeks, starting July 29"
-    - "Wednesdays at 1 pm — every week, starting July 22"
-    - "Wednesdays at 3:15 pm — every two weeks, starting July 29"
-    - "Thursdays at 12:30 pm — every week, starting July 23"
-    - "Thursdays at 4:30 pm — every week, starting July 23"
+    - "Wednesdays at 1 pm — every week, starting July 29"
+    - "Thursdays at 12:30 pm — every week, starting July 30"
+    - "Thursdays at 3:15 pm — every two weeks, starting August 23"
 
 # Paste your exact Psychology Today and Facebook URLs to finish consolidating your identity.
 same_as:
