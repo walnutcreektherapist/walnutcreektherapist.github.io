@@ -49,7 +49,6 @@ openings:
   pointer: "Now booking new clients — see regular weekly openings"
   slots:
     - "Mondays at 10:15 am — every week, starting August 3rd" 
-    - "Mondays at 3:15 pm — every week, starting August 3rd" 
     - "Tuesdays at 10:15 am — every two weeks, starting August 4th"
     - "Tuesdays at 11:30 am — every week, starting August 4th"
     - "Wednesdays at 12 noon — every two weeks, starting August 12th"
