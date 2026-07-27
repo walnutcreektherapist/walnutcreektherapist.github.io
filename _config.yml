@@ -45,7 +45,7 @@ fees:
 # To hide the list everywhere, leave slots empty.
 openings:
   as_of: "Monday, July 27th"
-  show_public: false
+  show_public: true
   pointer: "Now booking new clients — see regular weekly openings"
   slots:
     - "Mondays at 10:15 am — every week, starting August 3rd" 
