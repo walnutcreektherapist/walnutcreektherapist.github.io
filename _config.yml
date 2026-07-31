@@ -29,26 +29,41 @@ fees:
 
 # Standing-appointment openings. Update each week: change "as_of" and edit the slots.
 #
-# The /openings/ page ALWAYS exists and always shows this list. It is unlinked and noindexed,
-# so it stays private — share that URL directly with anyone you like.
+# The /openings/ page ALWAYS exists and always shows this section. It is unlinked and
+# noindexed, so it stays private — share that URL directly with anyone you like.
 #
-# ONE TOGGLE controls whether the openings also show up publicly on the site:
+# TWO TOGGLES:
 #
-#   show_public: false
-#   show_public: false
-#                            - the "Now booking..." link under the hero buttons on every page
-#                            - the full openings list on the Contact page
+#   show_public: true    - the "Now booking..." link under the hero buttons on every
+#                          page, AND the full openings section on the Contact page.
+#   show_public: false   - openings appear ONLY on the walled /openings/ page.
+#
+#   waitlist_mode: false - normal. Slot list renders as always.
+#   waitlist_mode: true  - adds the waitlist. What renders depends on the slots:
+#                            * slots listed  -> slot list as normal, PLUS a
+#                              "Don't see a time that fits? Join the waitlist"
+#                              block under it. Use this when you have only a few
+#                              openings and want a path for people they don't fit.
+#                            * slots empty   -> the page shows the full/waitlist
+#                              state instead of the list. Use this when you're full.
+#                              (Empty = delete or comment out every "- ..." line.)
+#
+#   When FULL (waitlist_mode true + no slots), also set show_public: false —
+#   the "Now booking" hero pointer would advertise openings you don't have.
+#
+#   waitlist_url points to the SimplePractice CONTACT FORM (the waitlist intake),
+#   NOT the consult scheduler. Don't swap them.
 #
 # Edit the "pointer" text below to match your status (e.g. "Limited availability -
 # see current openings" or "Currently full - join the waitlist").
-#
-# To hide the list everywhere, leave slots empty.
 openings:
   as_of: "Monday, July 27th"
   show_public: true
+  waitlist_mode: false
+  waitlist_url: "https://matthew-lindgren.clientsecure.me/contact-widget"
   pointer: "Now booking new clients — see regular weekly openings"
   slots:
-    - "Mondays at 10:15 am — every two weeks, starting August 10th" 
+    - "Mondays at 10:15 am — every two weeks, starting August 10th"
     - "Tuesdays at 10:15 am — every two weeks, starting August 11th"
     - "Tuesdays at 12:45 pm — every week, starting August 11th"
     # Pending Russ/Margaret - "Tuesdays at 4:30 pm - every week, starting August 11th"
