@@ -57,7 +57,7 @@ fees:
 # Edit the "pointer" text below to match your status (e.g. "Limited availability -
 # see current openings" or "Currently full - join the waitlist").
 openings:
-  as_of: "Monday, July 27th"
+  as_of: "Friday, July 31st"
   show_public: true
   waitlist_mode: true
   waitlist_url: "https://matthew-lindgren.clientsecure.me/contact-widget"
