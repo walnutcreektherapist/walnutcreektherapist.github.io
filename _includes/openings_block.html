@@ -1,3 +1,18 @@
+{% assign wl_slot_count = site.openings.slots | size %}
+{% if site.openings.waitlist_mode and wl_slot_count == 0 %}
+<section class="band band--sage" id="openings">
+  <div class="wrap">
+    <p class="eyebrow">Standing appointments</p>
+    <h2>Currently full — join the waitlist</h2>
+    <p class="openings-asof">As of {{ site.openings.as_of }}</p>
+    <p class="lead-para">My ongoing weekly times are full right now. If you'd like a place in line, join my waitlist — when a time opens that matches your availability, I'll reach out to schedule a free 30-minute consultation.</p>
+    <p class="lead-para">Sessions are $275 for individual therapy and $305 for couples, per 50-minute hour. My practice is private pay — I provide a superbill you can submit for out-of-network reimbursement, and HSA and FSA cards are accepted. Sessions are in person in downtown Walnut Creek.</p>
+    <p class="lead-para">Openings shift week to week and can't be predicted, so please keep looking for the right therapist in the meantime. If you find someone, let me know so I can keep my list current.</p>
+    <p><a class="btn btn-primary" href="{{ site.openings.waitlist_url }}" target="_blank" rel="noopener">Join the waitlist</a></p>
+    <p class="openings-note">Questions first? <a href="tel:{{ site.phone_e164 }}">Call {{ site.phone }}</a>.</p>
+  </div>
+</section>
+{% else %}
 <section class="band band--sage" id="openings">
   <div class="wrap">
     <p class="eyebrow">Standing appointments</p>
@@ -7,6 +22,14 @@
       {% for slot in site.openings.slots %}<li>{{ slot }}</li>
       {% endfor %}
     </ul>
+    {% if site.openings.waitlist_mode %}
+    <p class="lead-para">Don't see a time that fits? Join my waitlist — when an ongoing weekly time opens that matches your availability, I'll reach out to schedule a free 30-minute consultation. Sessions are $275 for individual therapy and $305 for couples, per 50-minute hour; my practice is private pay, in person in downtown Walnut Creek.</p>
+    <p class="lead-para">Openings shift week to week and can't be predicted, so please keep looking for the right therapist in the meantime. If you find someone, let me know so I can keep my list current.</p>
+    <p><a class="btn btn-primary" href="{{ site.openings.waitlist_url }}" target="_blank" rel="noopener">Join the waitlist</a></p>
+    <p class="openings-note">Questions first? <a href="tel:{{ site.phone_e164 }}">Call {{ site.phone }}</a> or <a href="{{ site.booking_url }}" target="_blank" rel="noopener">book a consult</a> anytime.</p>
+    {% else %}
     <p class="openings-note">Don't see a time that fits? <a href="tel:{{ site.phone_e164 }}">Call {{ site.phone }}</a> or <a href="{{ site.booking_url }}" target="_blank" rel="noopener">book a consult</a> — openings shift week to week, and I keep a short waitlist.</p>
+    {% endif %}
   </div>
 </section>
+{% endif %}
