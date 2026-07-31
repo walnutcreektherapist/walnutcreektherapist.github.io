@@ -48,13 +48,12 @@ openings:
   show_public: true
   pointer: "Now booking new clients — see regular weekly openings"
   slots:
-    - "Mondays at 10:15 am — every week, starting August 3rd" 
-    - "Tuesdays at 10:15 am — every two weeks, starting August 4th"
-    - "Tuesdays at 11:30 am — every week, starting August 4th"
-    - "Tuesdays at 12:45 pm — every week, starting August 4th"
-    - "Wednesdays at 12 noon — every two weeks, starting August 12th"
-    - "Wednesdays at 1 pm — every week, starting August 5th"
-    - "Thursdays at 3:15 pm — every two weeks, starting August 23"
+    - "Mondays at 10:15 am — every two weeks, starting August 10th" 
+    - "Tuesdays at 10:15 am — every two weeks, starting August 11th"
+    - "Tuesdays at 12:45 pm — every week, starting August 11th"
+    # Pending Russ/Margaret - "Tuesdays at 4:30 pm - every week, starting August 11th"
+    # - "Wednesdays at 12:45 pm — every week, starting August 12th"
+    - "Thursdays at 2:30 pm — every two weeks, starting August 27th"
 
 # Paste your exact Psychology Today and Facebook URLs to finish consolidating your identity.
 same_as:
