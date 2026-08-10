@@ -57,17 +57,17 @@ fees:
 # Edit the "pointer" text below to match your status (e.g. "Limited availability -
 # see current openings" or "Currently full - join the waitlist").
 openings:
-  as_of: "Friday, August 7th"
+  as_of: "Monday, August 10th"
   show_public: true
   waitlist_mode: true
   waitlist_url: "https://walnutcreektherapists.clientsecure.me/contact-widget"
   pointer: "Now booking new clients — see regular weekly openings"
   slots:
-    - "Mondays at 10:15 am — every two weeks, starting August 10th"
-    - "Tuesdays at 10:15 am — every two weeks, starting August 11th"
-    - "Wednesdays at 11:30 am — every two weeks, starting August 12th"
-    - "Wednesdays at 12:45 pm — every week, starting August 12th"
-    - "Thursdays at 2:30 pm — every two weeks, starting August 27th"
+    - "Mondays at 10:15 am — every two weeks, starting August 17th"
+    # - "Tuesdays at 10:15 am — every two weeks, starting August 11th"
+    - "Wednesdays at 11:30 am — every two weeks, starting August 26th"
+    - "Wednesdays at 12:45 pm — every week, starting August 19th"
+    # - "Thursdays at 2:30 pm — every two weeks, starting August 27th"
 
 # Paste your exact Psychology Today and Facebook URLs to finish consolidating your identity.
 same_as:
