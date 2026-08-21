@@ -63,9 +63,9 @@ openings:
   waitlist_url: "https://walnutcreektherapists.clientsecure.me/contact-widget"
   pointer: "Now booking new clients — see regular weekly openings"
   slots:
-    - "Mondays at 10:15 am — every two weeks, starting August 17th"
-    # - "Tuesdays at 10:15 am — every two weeks, starting August 11th"
-    - "Wednesdays at 11:30 am — every two weeks, starting August 26th"
+    - "Mondays at 10:15 am — every two weeks, starting August 31st"
+    # - "Tuesdays at 10:15 am — every two weeks, starting August 31st"
+    # - "Wednesdays at 11:30 am — every two weeks, starting August 26th"
     # - "Wednesdays at 12:45 pm — every week, starting August 19th"
     # - "Thursdays at 2:30 pm — every two weeks, starting August 27th"
 
