@@ -57,13 +57,13 @@ fees:
 # Edit the "pointer" text below to match your status (e.g. "Limited availability -
 # see current openings" or "Currently full - join the waitlist").
 openings:
-  as_of: "Monday, August 10th"
-  show_public: true
+  as_of: "Friday, August 21st"
+  show_public: false
   waitlist_mode: true
   waitlist_url: "https://walnutcreektherapists.clientsecure.me/contact-widget"
   pointer: "Now booking new clients — see regular weekly openings"
   slots:
-    - "Mondays at 10:15 am — every two weeks, starting August 31st"
+    # - "Mondays at 10:15 am — every two weeks, starting August 31st"
     # - "Tuesdays at 10:15 am — every two weeks, starting August 31st"
     # - "Wednesdays at 11:30 am — every two weeks, starting August 26th"
     # - "Wednesdays at 12:45 pm — every week, starting August 19th"
