@@ -58,7 +58,7 @@ fees:
 # see current openings" or "Currently full - join the waitlist").
 openings:
   as_of: "Friday, August 21st"
-  show_public: false
+  show_public: true
   waitlist_mode: true
   waitlist_url: "https://walnutcreektherapists.clientsecure.me/contact-widget"
   pointer: "Now booking new clients — see regular weekly openings"
