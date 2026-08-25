@@ -5,12 +5,12 @@ description: "Current standing-appointment openings for ongoing weekly therapy w
 permalink: /openings/
 noindex: true
 ---
-{% assign wl_slot_count = site.openings.slots | size %}
+{% assign op_slot_count = site.openings.slots | size %}
 <section class="page-hero">
   <div class="wrap">
     <p class="eyebrow">Current Openings</p>
     <h1>Openings for ongoing therapy</h1>
-    {% if site.openings.waitlist_mode and wl_slot_count == 0 %}
+    {% if site.openings.mode == "full" or op_slot_count == 0 %}
     <p class="lede">My openings for ongoing, weekly appointments — the recurring standing time that becomes yours — are full right now. The waitlist below is how I reach out when a time opens up, and a free 30-minute consultation can be booked anytime.</p>
     {% else %}
     <p class="lede">Here are my current openings for ongoing, weekly appointments — the recurring standing time that becomes yours. A free 30-minute consultation can be booked anytime; the list below shows the ongoing times available.</p>

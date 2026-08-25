@@ -39,7 +39,7 @@ faqs:
   </div>
 </section>
 
-{% if site.openings.show_public %}{% include openings_block.html %}{% endif %}
+{% unless site.openings.mode == "private" %}{% include openings_block.html %}{% endunless %}
 
 <section class="band">
   <div class="wrap">

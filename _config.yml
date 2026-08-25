@@ -32,36 +32,32 @@ fees:
 # The /openings/ page ALWAYS exists and always shows this section. It is unlinked and
 # noindexed, so it stays private — share that URL directly with anyone you like.
 #
-# TWO TOGGLES:
+# ONE KEY — "mode" — controls everything. The pointer text under the hero buttons
+# changes automatically to match; you never edit pointer wording by hand.
 #
-#   show_public: true    - the "Now booking..." link under the hero buttons on every
-#                          page, AND the full openings section on the Contact page.
-#   show_public: false   - openings appear ONLY on the walled /openings/ page.
+#   mode: "normal"   - Booking normally. Slot list renders; pointer reads
+#                      "Now booking new clients — see regular weekly openings".
+#   mode: "hybrid"   - A few openings left. Slot list renders PLUS a
+#                      "Join the waitlist" path under it, for anyone the listed
+#                      times don't fit; pointer reads "Limited openings — see
+#                      current weekly times".
+#   mode: "full"     - No openings. The slot list is replaced by the full/waitlist
+#                      state (no empty list, no phone); pointer reads
+#                      "Currently full — join the waitlist". Slots are ignored,
+#                      so you can leave them commented out for next time.
+#   mode: "private"  - Nothing on the public site mentions openings at all.
+#                      The walled /openings/ page still works as always.
 #
-#   waitlist_mode: false - normal. Slot list renders as always.
-#   waitlist_mode: true  - adds the waitlist. What renders depends on the slots:
-#                            * slots listed  -> slot list as normal, PLUS a
-#                              "Don't see a time that fits? Join the waitlist"
-#                              block under it. Use this when you have only a few
-#                              openings and want a path for people they don't fit.
-#                            * slots empty   -> the page shows the full/waitlist
-#                              state instead of the list. Use this when you're full.
-#                              (Empty = delete or comment out every "- ..." line.)
-#
-#   When FULL (waitlist_mode true + no slots), also set show_public: false —
-#   the "Now booking" hero pointer would advertise openings you don't have.
+#   Safety net: if the slots list is empty, the site shows the "full" state even
+#   if mode still says normal or hybrid — it will never render an empty list or
+#   a "Now booking" pointer with nothing behind it.
 #
 #   waitlist_url points to the SimplePractice CONTACT FORM (the waitlist intake),
 #   NOT the consult scheduler. Don't swap them.
-#
-# Edit the "pointer" text below to match your status (e.g. "Limited availability -
-# see current openings" or "Currently full - join the waitlist").
 openings:
+  mode: "full"
   as_of: "Friday, August 21st"
-  show_public: true
-  waitlist_mode: true
   waitlist_url: "https://walnutcreektherapists.clientsecure.me/contact-widget"
-  pointer: "Now booking new clients — see regular weekly openings"
   slots:
     # - "Mondays at 10:15 am — every two weeks, starting August 31st"
     # - "Tuesdays at 10:15 am — every two weeks, starting August 31st"

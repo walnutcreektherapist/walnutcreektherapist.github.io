@@ -1,1 +1,10 @@
-<p class="openings-pointer"><a href="/openings/">{{ site.openings.pointer }} <span aria-hidden="true">&rarr;</span></a></p>
+{%- assign om = site.openings.mode -%}
+{%- assign om_slot_count = site.openings.slots | size -%}
+{%- if om == "full" or om_slot_count == 0 -%}
+{%- assign om_text = "Currently full — join the waitlist" -%}
+{%- elsif om == "hybrid" -%}
+{%- assign om_text = "Limited openings — see current weekly times" -%}
+{%- else -%}
+{%- assign om_text = "Now booking new clients — see regular weekly openings" -%}
+{%- endif -%}
+<p class="openings-pointer"><a href="/openings/">{{ om_text }} <span aria-hidden="true">&rarr;</span></a></p>

@@ -1,17 +1,27 @@
-{%- assign wl = site.openings.waitlist_mode -%}
-{%- assign has_slots = false -%}
-{%- if site.openings.slots and site.openings.slots != empty -%}{%- assign has_slots = true -%}{%- endif -%}
+{%- assign ob_mode = site.openings.mode -%}
+{%- assign ob_slot_count = site.openings.slots | size -%}
+{%- if ob_mode == "full" or ob_slot_count == 0 -%}{%- assign ob_state = "full" -%}
+{%- elsif ob_mode == "hybrid" -%}{%- assign ob_state = "hybrid" -%}
+{%- else -%}{%- assign ob_state = "normal" -%}
+{%- endif -%}
 <section class="band band--sage" id="openings">
   <div class="wrap">
     <p class="eyebrow">Standing appointments</p>
-    {% if has_slots %}
+    {% if ob_state == "full" %}
+    <h2>Currently full</h2>
+    <p class="openings-asof">As of {{ site.openings.as_of }}</p>
+    <p class="openings-note">My ongoing weekly times are full right now. Join the waitlist and I'll reach out to schedule a free consultation as soon as a time opens up that matches your availability. In the meantime, please feel free to keep looking — openings can't be predicted, and finding the right fit matters more than waiting for me.</p>
+    <div class="hero-cta" style="margin-top:14px;">
+      <a class="btn btn-primary" href="{{ site.openings.waitlist_url }}" target="_blank" rel="noopener">Join the waitlist</a>
+    </div>
+    {% else %}
     <h2>Current weekly openings</h2>
     <p class="openings-asof">As of {{ site.openings.as_of }}</p>
     <ul class="openings-list">
       {% for slot in site.openings.slots %}<li>{{ slot }}</li>
       {% endfor %}
     </ul>
-    {% if wl %}
+    {% if ob_state == "hybrid" %}
     <div class="hero-cta" style="margin:18px 0 12px;">
       <a class="btn btn-primary" href="{{ site.openings.waitlist_url }}" target="_blank" rel="noopener">Join the waitlist</a>
       <a class="btn btn-ghost" href="{{ site.booking_url }}" target="_blank" rel="noopener">Book a free consultation</a>
@@ -20,13 +30,6 @@
     {% else %}
     <p class="openings-note">Don't see a time that fits? <a href="tel:{{ site.phone_e164 }}">Call {{ site.phone }}</a> or <a href="{{ site.booking_url }}" target="_blank" rel="noopener">book a consult</a> — openings shift week to week.</p>
     {% endif %}
-    {% else %}
-    <h2>Currently full</h2>
-    <p class="openings-asof">As of {{ site.openings.as_of }}</p>
-    <p class="openings-note">My ongoing weekly times are full right now. Join the waitlist and I'll reach out to schedule a free consultation as soon as a time opens up that matches your availability. In the meantime, please feel free to keep looking — openings can't be predicted, and finding the right fit matters more than waiting for me.</p>
-    <div class="hero-cta" style="margin-top:14px;">
-      <a class="btn btn-primary" href="{{ site.openings.waitlist_url }}" target="_blank" rel="noopener">Join the waitlist</a>
-    </div>
     {% endif %}
   </div>
 </section>
