@@ -55,13 +55,13 @@ fees:
 #   waitlist_url points to the SimplePractice CONTACT FORM (the waitlist intake),
 #   NOT the consult scheduler. Don't swap them.
 openings:
-  mode: "full"
-  as_of: "Tuesday, August 25th"
+  mode: "hybrid"
+  as_of: "Monday, August 31st"
   waitlist_url: "https://walnutcreektherapists.clientsecure.me/contact-widget"
   slots:
     # - "Mondays at 10:15 am — every two weeks, starting August 31st"
-    # - "Tuesdays at 10:15 am — every two weeks, starting August 31st"
-    # - "Wednesdays at 11:30 am — every two weeks, starting August 26th"
+     - "Tuesdays at 9:00 am — every week, starting September 8th"
+     - "Wednesdays at 11:30 am — every two weeks, starting September 23rd"
     # - "Wednesdays at 12:45 pm — every week, starting August 19th"
     # - "Thursdays at 2:30 pm — every two weeks, starting August 27th"
 
