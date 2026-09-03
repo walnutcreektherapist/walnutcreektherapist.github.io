@@ -89,7 +89,7 @@ exclude:
 # When approved, set to "Matthew Lindgren" and a discreet footer line appears.
 legal_name: ""
 # Online couples classes — leave blank to hide; set a line of text to show it in the footer.
-couples_classes: 'Couples classes are coming soon — <a href="https://www.steadycouple.com/" target="_blank" rel="noopener">join the waitlist at steadycouple.com</a>.'
+couples_classes: 'Couples classes are coming soon — <a href="https://steadycouple.com/" target="_blank" rel="noopener">join the waitlist at steadycouple.com</a>.'
 corporation: "Walnut Creek Therapists, A Professional Marriage and Therapy Corporation, doing business as Walnut Creek Therapists, Inc."
 
 # Reviews — links out only (no review text reproduced on-site). Verify which Yelp listing holds your reviews.
