@@ -56,7 +56,7 @@ fees:
 #   NOT the consult scheduler. Don't swap them.
 openings:
   mode: "hybrid"
-  as_of: "Monday, August 31st"
+  as_of: "Wednesday, September 2nd"
   waitlist_url: "https://walnutcreektherapists.clientsecure.me/contact-widget"
   slots:
     # - "Mondays at 10:15 am — every two weeks, starting August 31st"
