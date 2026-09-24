@@ -55,7 +55,7 @@ fees:
 #   waitlist_url points to the SimplePractice CONTACT FORM (the waitlist intake),
 #   NOT the consult scheduler. Don't swap them.
 openings:
-  mode: "full"
+  mode: "hybrid"
   as_of: "Thursday, September 24th"
   waitlist_url: "https://walnutcreektherapists.clientsecure.me/contact-widget"
   slots:
