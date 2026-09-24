@@ -56,12 +56,12 @@ fees:
 #   NOT the consult scheduler. Don't swap them.
 openings:
   mode: "full"
-  as_of: "Friday, September 11th"
+  as_of: "Thursday, September 24th"
   waitlist_url: "https://walnutcreektherapists.clientsecure.me/contact-widget"
   slots:
     # - "Mondays at 10:15 am — every two weeks, starting August 31st"
-    # - "Tuesdays at 4:30 pm — every two weeks, starting September 8th"
-     - "Wednesdays at 11:30 am — every two weeks, starting September 23rd"
+     - "Tuesdays at 4:30 pm — every two weeks, starting October 29th"
+     - "Wednesdays at 10:15 am — every two weeks, starting October 30th"
     # - "Wednesdays at 12:45 pm — every week, starting August 19th"
     # - "Thursdays at 2:30 pm — every two weeks, starting August 27th"
 
