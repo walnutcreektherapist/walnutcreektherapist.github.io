@@ -56,12 +56,12 @@ fees:
 #   NOT the consult scheduler. Don't swap them.
 openings:
   mode: "hybrid"
-  as_of: "Monday, October 24th"
+  as_of: "Wednesday, October 28th"
   waitlist_url: "https://walnutcreektherapists.clientsecure.me/contact-widget"
   slots:
-    # - "Tuesdays at 10:15 am — every two weeks, starting October 27th"
-    # - "Tuesdays at 4:30 pm — every two weeks, starting November 17th"
-      - "Wednesdays at 12:45 pm — every week, starting November 3rd"
+    - "Mondays at 3:15 pm — every two weeks, starting November 16th"
+    # hold Don/Jenni - "Tuesdays at 10:15 am — every two weeks, starting October 27th"
+    - "Wednesdays at 12:45 pm — every week, starting November 3rd"
 
 # Paste your exact Psychology Today and Facebook URLs to finish consolidating your identity.
 same_as:
