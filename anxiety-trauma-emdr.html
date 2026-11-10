@@ -28,11 +28,8 @@ faqs:
     <p class="eyebrow">Anxiety &amp; Trauma</p>
     <h1>Therapy for anxiety, panic, and trauma in Walnut Creek</h1>
     <p class="lede">When your mind won't slow down, you're exhausted but can't sleep, and panic can hit out of nowhere, it's hard to believe it will ever feel different. It can. I help people quiet the racing thoughts and constant worry, recover from trauma, and get their life back — with approaches that are proven to work, in person in Walnut Creek.</p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="{{ site.booking_url }}" target="_blank" rel="noopener">Book a free consultation</a>
-      <a class="btn btn-ghost" href="tel:{{ site.phone_e164 }}">Call {{ site.phone }}</a>
-    </div>
-    {% unless site.openings.mode == "private" %}{% include openings_pointer.html %}{% endunless %}
+    {% include hero_buttons.html %}
+    {% unless site.openings.mode == "private" or wct_full %}{% include openings_pointer.html %}{% endunless %}
     <div class="tickrule short"></div>
   </div>
 </section>

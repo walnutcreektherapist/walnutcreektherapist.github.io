@@ -29,11 +29,8 @@ faqs:
     <h1>The ADHD that gets missed in women</h1>
     <p class="lede">If you've spent years wondering whether you have ADHD while everyone around you waved it off, there's a reason it never got caught — and it probably isn't you. ADHD was defined around hyperactive boys, so the version that shows up in women slips right past the people who are supposed to catch it. It tends to look less like bouncing off the walls and more like a mind that never quiets: overwhelmed, disorganized behind a capable surface, exhausted from holding everything together, buried under a mental load no one else can see.</p>
     <p class="lede">Maybe you've been called lazy, scattered, flaky, or too sensitive your whole life. Maybe you've quietly carried the sense that everyone else got a manual you never did, and blamed yourself for it. That's the part I want to name first: the struggle is real, it has a name, and it was never a character flaw.</p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="{{ site.booking_url }}" target="_blank" rel="noopener">Book a free consultation</a>
-      <a class="btn btn-ghost" href="tel:{{ site.phone_e164 }}">Call {{ site.phone }}</a>
-    </div>
-    {% unless site.openings.mode == "private" %}{% include openings_pointer.html %}{% endunless %}
+    {% include hero_buttons.html %}
+    {% unless site.openings.mode == "private" or wct_full %}{% include openings_pointer.html %}{% endunless %}
     <div class="tickrule short"></div>
   </div>
 </section>

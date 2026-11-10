@@ -6,6 +6,7 @@ permalink: /contact/
 faqs:
   - q: "How do I get started?"
     a: "Book a free 30-minute consultation through the scheduler, or call (925) 315-8205. We'll figure out together whether I'm the right fit."
+    a_full: "My ongoing weekly times are full right now. Join the waitlist, and I'll reach out to schedule a free 30-minute consultation as soon as a time opens up that matches your availability. We'll figure out together whether I'm the right fit."
   - q: "What are your hours?"
     a: "Weekdays. The first session is at 9am and the last at 5:45pm."
   - q: "Do you accept insurance?"
@@ -15,11 +16,9 @@ faqs:
   <div class="wrap">
     <p class="eyebrow">Contact</p>
     <h1>Get started</h1>
-    <p class="lede">Book a free 30-minute consultation, or call to ask anything before you decide.</p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="{{ site.booking_url }}" target="_blank" rel="noopener">Book a free consultation</a>
-      <a class="btn btn-ghost" href="tel:{{ site.phone_e164 }}">Call {{ site.phone }}</a>
-    </div>
+    {% include openings_state.html %}{% if wct_full %}<p class="lede">My ongoing weekly times are full right now. Join the waitlist, and I'll reach out when a time opens up.</p>
+    {% else %}<p class="lede">Book a free 30-minute consultation, or call to ask anything before you decide.</p>{% endif %}
+    {% include hero_buttons.html %}
     
     <figure class="office-figure" style="margin:24px 0 8px;">
       <img src="/assets/img/office.jpg" alt="The Walnut Creek Therapists office building at 1535 North Main Street in downtown Walnut Creek">

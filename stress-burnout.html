@@ -27,11 +27,8 @@ faqs:
     <h1>Burnout, when you look fine on paper</h1>
     <p class="lede">From the outside, you're doing great — the job, the family, the life you were supposed to want. So why does it feel like this? You're stretched thin, giving everyone the best of you and running on what's left, and underneath the competence you're exhausted, irritable, and quietly brutal with yourself about all of it. Somehow you can feel alone inside a full life.</p>
     <p class="lede">Maybe it shows up as numbness — you're going through the motions, and the things that used to land just don't. Maybe the sleep's gone, or you're leaning harder on a drink at the end of the day, or the people closest to you get the worn-out version of you. On paper everything works. It just doesn't feel like it's yours.</p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="{{ site.booking_url }}" target="_blank" rel="noopener">Book a free consultation</a>
-      <a class="btn btn-ghost" href="tel:{{ site.phone_e164 }}">Call {{ site.phone }}</a>
-    </div>
-    {% unless site.openings.mode == "private" %}{% include openings_pointer.html %}{% endunless %}
+    {% include hero_buttons.html %}
+    {% unless site.openings.mode == "private" or wct_full %}{% include openings_pointer.html %}{% endunless %}
     <div class="tickrule short"></div>
   </div>
 </section>

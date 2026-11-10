@@ -27,11 +27,8 @@ faqs:
     <h1>Therapy for men who are running on empty</h1>
     <p class="lede">From the outside, you've got it handled — the career, the family, the life you built. So why does it feel like this? The job is relentless, everyone gets the best of you and you get what's left, and you're running on fumes: short-tempered, impatient, quietly hard on yourself about all of it. You're the one who holds it together, and somehow you feel alone inside a full life.</p>
     <p class="lede">And it's showing up in the concrete stuff. Maybe you're sleeping badly, drinking more than you mean to, leaning on nicotine, or you've quit the gym. Maybe your sex drive is gone, the friendships have quietly faded, and even with your kids you're not the father you mean to be. On paper everything works. It just doesn't feel that way.</p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="{{ site.booking_url }}" target="_blank" rel="noopener">Book a free consultation</a>
-      <a class="btn btn-ghost" href="tel:{{ site.phone_e164 }}">Call {{ site.phone }}</a>
-    </div>
-    {% unless site.openings.mode == "private" %}{% include openings_pointer.html %}{% endunless %}
+    {% include hero_buttons.html %}
+    {% unless site.openings.mode == "private" or wct_full %}{% include openings_pointer.html %}{% endunless %}
     <div class="tickrule short"></div>
   </div>
 </section>

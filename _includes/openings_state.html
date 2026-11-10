@@ -1,0 +1,8 @@
+{%- comment -%}
+  Sets wct_full = true when the practice is full (mode "full", or no slots listed),
+  unless mode is "private". Every booking button, the phone button, the openings
+  pointer, and the "How do I get started?" FAQ answers read this one flag.
+{%- endcomment -%}
+{%- assign wct_slot_count = site.openings.slots | size -%}
+{%- assign wct_full = false -%}
+{%- if site.openings.mode != "private" -%}{%- if site.openings.mode == "full" or wct_slot_count == 0 -%}{%- assign wct_full = true -%}{%- endif -%}{%- endif -%}

@@ -6,7 +6,7 @@
     </button>
     <nav class="nav-links" id="menu" aria-label="Primary">
       {% for item in site.nav %}<a href="{{ item.url }}"{% if page.url == item.url %} class="active"{% endif %}>{{ item.title }}</a>{% endfor %}
-      <a class="btn btn-primary nav-cta" href="{{ site.booking_url }}" target="_blank" rel="noopener">Book a free consultation</a>
+      {% include openings_state.html %}{% if wct_full %}<a class="btn btn-primary nav-cta" href="{{ site.openings.waitlist_url }}" target="_blank" rel="noopener">Join the waitlist</a>{% else %}<a class="btn btn-primary nav-cta" href="{{ site.booking_url }}" target="_blank" rel="noopener">Book a free consultation</a>{% endif %}
     </nav>
   </div>
 </header>

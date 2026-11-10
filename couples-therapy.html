@@ -26,11 +26,8 @@ faqs:
     <p class="eyebrow">Couples therapy</p>
     <h1>Couples therapy in Walnut Creek</h1>
     <p class="lede">Structured, skills-based couples therapy where you build new patterns, track real progress, and know whether it's working — instead of talking in circles.</p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="{{ site.booking_url }}" target="_blank" rel="noopener">Book a free consultation</a>
-      <a class="btn btn-ghost" href="tel:{{ site.phone_e164 }}">Call {{ site.phone }}</a>
-    </div>
-    {% unless site.openings.mode == "private" %}{% include openings_pointer.html %}{% endunless %}
+    {% include hero_buttons.html %}
+    {% unless site.openings.mode == "private" or wct_full %}{% include openings_pointer.html %}{% endunless %}
     <div class="tickrule short"></div>
   </div>
 </section>

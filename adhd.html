@@ -24,11 +24,8 @@ faqs:
     <p class="eyebrow">Adult ADHD</p>
     <h1>Therapy for adults with ADHD in Walnut Creek</h1>
     <p class="lede">If you've spent years feeling scattered and behind — whether that's restlessness and impulsivity you've never been able to switch off, or a quieter kind of overwhelm nobody else can see — it's exhausting. You're not lazy, and you're not broken, and there's real work that helps.</p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="{{ site.booking_url }}" target="_blank" rel="noopener">Book a free consultation</a>
-      <a class="btn btn-ghost" href="tel:{{ site.phone_e164 }}">Call {{ site.phone }}</a>
-    </div>
-    {% unless site.openings.mode == "private" %}{% include openings_pointer.html %}{% endunless %}
+    {% include hero_buttons.html %}
+    {% unless site.openings.mode == "private" or wct_full %}{% include openings_pointer.html %}{% endunless %}
     <div class="tickrule short"></div>
   </div>
 </section>

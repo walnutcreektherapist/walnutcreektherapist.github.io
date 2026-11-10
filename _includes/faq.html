@@ -1,6 +1,6 @@
-{% if page.faqs %}
+{% if page.faqs %}{% include openings_state.html %}
 <div class="faq">
-{% for f in page.faqs %}<details{% if forloop.first %} open{% endif %}><summary>{{ f.q }}</summary><div class="answer">{{ f.a }}</div></details>
+{% for f in page.faqs %}<details{% if forloop.first %} open{% endif %}><summary>{{ f.q }}</summary><div class="answer">{% if wct_full and f.a_full %}{{ f.a_full }}{% else %}{{ f.a }}{% endif %}</div></details>
 {% endfor %}<details><summary>{{ site.trust_faq.q }}</summary><div class="answer">{{ site.trust_faq.a }}</div></details>
 </div>
 {% endif %}

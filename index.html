@@ -12,6 +12,7 @@ faqs:
     a: "Yes — that's how I work. Sessions are in person, in a real office in downtown Walnut Creek. Couples therapy is in person only; for individuals, secure video is available across California when meeting in person isn't possible."
   - q: "How do I get started?"
     a: "Book a free 30-minute consultation through the scheduler, or call (925) 315-8205."
+    a_full: "My ongoing weekly times are full right now. Join the waitlist, and I'll reach out to schedule a free 30-minute consultation as soon as a time opens up that matches your availability."
   - q: "How do you decide if you're the right therapist for me?"
     a: "The first session or two is partly about exactly that. I'll work to understand what's bringing you in and form an accurate picture of what's going on, and if what you need falls outside my areas — for example, I don't treat OCD — I'll help you find a clinician who specializes in it. I'd rather get you to the right care than keep you in the wrong room."
   - q: "How long will I be in therapy?"
@@ -23,11 +24,8 @@ faqs:
       <p class="eyebrow">{{ site.tagline }}</p>
       <h1>Couples and individual therapy in Walnut Creek</h1>
       <p class="lede">I'm Matthew Rojo, a licensed marriage and family therapist. I help couples reconnect and individuals work through anxiety, trauma, and ADHD — with a structured approach you can measure, so you know whether it's working, and when we're done.</p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="{{ site.booking_url }}" target="_blank" rel="noopener">Book a free consultation</a>
-        <a class="btn btn-ghost" href="tel:{{ site.phone_e164 }}">Call {{ site.phone }}</a>
-      </div>
-      {% unless site.openings.mode == "private" %}{% include openings_pointer.html %}{% endunless %}
+      {% include hero_buttons.html %}
+      {% unless site.openings.mode == "private" or wct_full %}{% include openings_pointer.html %}{% endunless %}
       <p class="trust"><span>Get the help you deserve, in person, in downtown Walnut Creek.</span></p>
     </div>
     <aside class="hero-portrait">

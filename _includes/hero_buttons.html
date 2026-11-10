@@ -1,0 +1,9 @@
+{%- include openings_state.html -%}
+<div class="hero-cta">
+  {% if wct_full -%}
+  <a class="btn btn-primary" href="{{ site.openings.waitlist_url }}" target="_blank" rel="noopener">Join the waitlist</a>
+  {%- else -%}
+  <a class="btn btn-primary" href="{{ site.booking_url }}" target="_blank" rel="noopener">Book a free consultation</a>
+  <a class="btn btn-ghost" href="tel:{{ site.phone_e164 }}">Call {{ site.phone }}</a>
+  {%- endif %}
+</div>
