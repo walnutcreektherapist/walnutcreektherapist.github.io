@@ -246,3 +246,7 @@ a.svc img{display:block;width:100%;height:210px;object-fit:cover;}
 }
 @media(max-width:620px){.about-grid:has(.portrait--photo){grid-template-columns:1fr;}.portrait.portrait--photo{width:200px;}}
 @media(max-width:520px){.svc-cards{grid-template-columns:1fr;}}
+
+.nature-break{padding:0 0 58px;}
+.nature-break img{display:block;width:100%;height:300px;object-fit:cover;border-radius:4px;}
+@media(max-width:860px){.nature-break{padding-bottom:44px;}.nature-break img{height:200px;}}
