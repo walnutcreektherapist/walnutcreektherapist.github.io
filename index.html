@@ -18,9 +18,9 @@ faqs:
   - q: "How long will I be in therapy?"
     a: "Not forever — that's the point of tracking. Because we set goals and watch progress, you'll know when you're done, or when something isn't working and needs to change. Everyone is different and I can't predict your course, but most people and couples work with me somewhere in the range of six to nine months, and few stay longer than a year."
 ---
-<section class="hero">
+<section class="hero hero--photo">
   <div class="wrap hero-grid">
-    <div class="hero-main">
+    <div class="hero-main hero-card">
       <p class="eyebrow">{{ site.tagline }}</p>
       <h1>Couples and individual therapy in Walnut Creek</h1>
       <p class="lede">I'm Matthew Rojo, a licensed marriage and family therapist. I help couples reconnect and individuals work through anxiety, trauma, and ADHD — with a structured approach you can measure, so you know whether it's working, and when we're done.</p>
@@ -28,10 +28,24 @@ faqs:
       {% unless site.openings.mode == "private" or wct_full %}{% include openings_pointer.html %}{% endunless %}
       <p class="trust"><span>Get the help you deserve, in person, in downtown Walnut Creek.</span></p>
     </div>
-    <aside class="hero-portrait">
-      <img src="/assets/img/matthew-rojo.jpg" alt="Matthew Rojo, Licensed Marriage and Family Therapist in Walnut Creek">
-      <p class="hp-cap"><strong>Matthew Rojo</strong><span class="ratings">{{ site.reviews.blurb }} · <a href="{{ site.reviews.yelp_url }}" target="_blank" rel="noopener">Yelp</a> · <a href="{{ site.reviews.google_url }}" target="_blank" rel="noopener">Google</a></span></p>
-    </aside>
+    <figure class="hero-photo">
+      <img src="/assets/img/matthew-rojo-office.jpg" alt="Matthew Rojo, Licensed Marriage and Family Therapist, standing in his Walnut Creek office">
+      <figcaption class="hp-cap"><strong>Matthew Rojo, LMFT</strong><span class="ratings">{{ site.reviews.blurb }} · <a href="{{ site.reviews.yelp_url }}" target="_blank" rel="noopener">Yelp</a> · <a href="{{ site.reviews.google_url }}" target="_blank" rel="noopener">Google</a></span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow">In person</p>
+    <h2>A real office in downtown Walnut Creek</h2>
+    <p class="lead-para">All sessions are offered in person, in a real office in downtown Walnut Creek — there's something about being in the room together that a screen doesn't quite match.</p>
+    <div class="photo-strip">
+      <img class="ps-wide" src="/assets/img/office-room.jpg" alt="The therapy office: a green velvet armchair with a mustard cushion beside a tall window" loading="lazy">
+      <img src="/assets/img/office-building.jpg" alt="The office building at 1535 North Main Street, with white columns and green doors" loading="lazy">
+      <img src="/assets/img/office-flowers.jpg" alt="A vase of sunflowers and roses on the office windowsill" loading="lazy">
+    </div>
+    <p class="strip-cap">1535 North Main Street, Suite 250 — downtown Walnut Creek.</p>
   </div>
 </section>
 
@@ -52,25 +66,13 @@ faqs:
 
 <section class="band">
   <div class="wrap">
-    <p class="eyebrow">In person</p>
-    <h2>A real office in downtown Walnut Creek</h2>
-    <p class="lead-para">All sessions are offered in person, in a real office in downtown Walnut Creek — there's something about being in the room together that a screen doesn't quite match.</p>
-    <figure class="office-figure">
-      <img src="/assets/img/office.jpg" alt="The Walnut Creek Therapists office building at 1535 North Main Street in downtown Walnut Creek">
-      <figcaption>1535 North Main Street, Suite 250 — downtown Walnut Creek.</figcaption>
-    </figure>
-  </div>
-</section>
-
-<section class="band">
-  <div class="wrap">
     <p class="eyebrow">How I can help</p>
     <h2>Where to start</h2>
-    <div class="threeway">
-      <a class="col link" href="/couples-therapy/"><h3>Couples therapy</h3><p>Structured, skills-based work with a finish line — track progress, build four skills, and work on the fight you keep having.</p><span class="more">Couples therapy →</span></a>
-      <a class="col link" href="/anxiety-trauma-emdr/"><h3>Anxiety &amp; Trauma</h3><p>Help for racing thoughts, panic, constant worry, and the weight of past trauma — so it eases instead of running your days.</p><span class="more">Anxiety &amp; Trauma →</span></a>
-      <a class="col link" href="/adhd/"><h3>Adult ADHD</h3><p>Help with the anxiety, overwhelm, and relationship strain that come with ADHD — and a different way of seeing it.</p><span class="more">Adult ADHD →</span></a>
-      <a class="col link" href="/stress-burnout/"><h3>Stress &amp; Burnout</h3><p>For high-functioning people stretched too thin — stressed, disconnected, running on empty. Get back to yourself.</p><span class="more">Stress &amp; Burnout →</span></a>
+    <div class="svc-cards">
+      <a class="svc" href="/couples-therapy/"><img src="/assets/img/couples-mugs.jpg" alt="" loading="lazy" style="object-position:50% 72%;"><span class="svc-body"><h3>Couples therapy</h3><p>Structured, skills-based work with a finish line — track progress, build four skills, and work on the fight you keep having.</p><span class="more">Couples therapy →</span></span></a>
+      <a class="svc" href="/anxiety-trauma-emdr/"><img src="/assets/img/forest-path.jpg" alt="" loading="lazy"><span class="svc-body"><h3>Anxiety &amp; Trauma</h3><p>Help for racing thoughts, panic, constant worry, and the weight of past trauma — so it eases instead of running your days.</p><span class="more">Anxiety &amp; Trauma →</span></span></a>
+      <a class="svc" href="/adhd/"><img src="/assets/img/birds-sunset.jpg" alt="" loading="lazy"><span class="svc-body"><h3>Adult ADHD</h3><p>Help with the anxiety, overwhelm, and relationship strain that come with ADHD — and a different way of seeing it.</p><span class="more">Adult ADHD →</span></span></a>
+      <a class="svc" href="/stress-burnout/"><img src="/assets/img/sunlit-room.jpg" alt="" loading="lazy"><span class="svc-body"><h3>Stress &amp; Burnout</h3><p>For high-functioning people stretched too thin — stressed, disconnected, running on empty. Get back to yourself.</p><span class="more">Stress &amp; Burnout →</span></span></a>
     </div>
   </div>
 </section>
@@ -84,11 +86,13 @@ faqs:
 </section>
 
 <section class="band band--forest">
-  <div class="wrap">
-    <figure class="welcome-figure"><img src="/assets/img/nature.jpg" alt="Oak trees on a Northern California hillside in soft morning light"></figure>
-    <p class="eyebrow">Welcome</p>
-    {% include welcome.html %}
-    <p class="welcome-trust"><a href="/about/#trust">Not sure you can trust a therapist you haven't met? That's fair — here's how I think about it <span aria-hidden="true">&rarr;</span></a></p>
+  <div class="wrap welcome-split">
+    <figure class="welcome-figure"><img src="/assets/img/mount-diablo.jpg" alt="Mount Diablo at sunset above green East Bay hills" loading="lazy"></figure>
+    <div>
+      <p class="eyebrow">Welcome</p>
+      {% include welcome.html %}
+      <p class="welcome-trust"><a href="/about/#trust">Not sure you can trust a therapist you haven't met? That's fair — here's how I think about it <span aria-hidden="true">&rarr;</span></a></p>
+    </div>
   </div>
 </section>
 

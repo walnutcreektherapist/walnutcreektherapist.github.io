@@ -22,7 +22,8 @@ faqs:
     a: "Yes — in person in downtown Walnut Creek, or by secure video anywhere in California."
 ---
 <section class="page-hero">
-  <div class="wrap">
+  <div class="wrap ph-grid">
+    <div class="ph-main">
     <p class="eyebrow">Therapy for Men</p>
     <h1>Therapy for men who are running on empty</h1>
     <p class="lede">From the outside, you've got it handled — the career, the family, the life you built. So why does it feel like this? The job is relentless, everyone gets the best of you and you get what's left, and you're running on fumes: short-tempered, impatient, quietly hard on yourself about all of it. You're the one who holds it together, and somehow you feel alone inside a full life.</p>
@@ -30,10 +31,11 @@ faqs:
     {% include hero_buttons.html %}
     {% unless site.openings.mode == "private" or wct_full %}{% include openings_pointer.html %}{% endunless %}
     <div class="tickrule short"></div>
+      </div>
+    <figure class="ph-figure"><img src="/assets/img/man-window.jpg" alt="A man looking out a window at sunset"></figure>
   </div>
 </section>
 
-<div class="brand-band" role="img" aria-label="Oak trees on a Northern California hillside — Walnut Creek Therapists" style="background-image:url('/assets/img/nature.jpg');"></div>
 
 <section class="band">
   <div class="wrap">
