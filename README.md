@@ -1,4 +1,4 @@
-# Test Edit to figure out Claude commit problem
+# Test 2 Edit to figure out Claude commit problem
 # Walnut Creek Therapists — Jekyll site
 
 Static Jekyll site for GitHub Pages. Editorial Calm design (Spectral + Hanken Grotesk;
