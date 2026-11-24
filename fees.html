@@ -1,0 +1,55 @@
+---
+layout: default
+title: "Fees & Good Faith Estimate | Walnut Creek Therapists"
+description: "Fees for individual and couples therapy in Walnut Creek, CA, and your right to a Good Faith Estimate of expected costs under the No Surprises Act."
+permalink: /fees/
+---
+{% assign fee_ind = site.fees.individual | plus: 0 %}
+{% assign fee_cpl = site.fees.couples | plus: 0 %}
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Fees</p>
+    <h1>Fees &amp; Good Faith Estimate</h1>
+    <p class="lede">What therapy costs here, and your right to a written estimate before you begin.</p>
+    <div class="tickrule short"></div>
+  </div>
+</section>
+
+<section class="band" id="good-faith-estimate">
+  <div class="wrap">
+    <h2>Good Faith Estimate Notice</h2>
+    <div class="gfe-notice">
+      <p>You have the right to receive a &ldquo;Good Faith Estimate&rdquo; explaining how much your medical and mental health care will cost.</p>
+      <p>Under the law, health care providers need to give patients who don&rsquo;t have insurance or who are not using insurance an estimate of the expected charges for medical services, including psychotherapy services.</p>
+      <p>You have the right to receive a Good Faith Estimate for the total expected cost of any non-emergency healthcare services, including psychotherapy services.</p>
+      <p>You can ask your health care provider, and any other provider you choose, for a Good Faith Estimate before you schedule a service.</p>
+      <p>If you receive a bill that is at least $400 more than your Good Faith Estimate, you can dispute the bill. Make sure to save a copy or picture of your Good Faith Estimate.</p>
+      <p>For questions or more information about your right to a Good Faith Estimate, visit <a href="https://www.cms.gov/nosurprises" target="_blank" rel="noopener">www.cms.gov/nosurprises</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="costs">
+  <div class="wrap">
+    <h2>What therapy costs</h2>
+    <div class="prose">
+      <p>The fee for a 50-minute psychotherapy visit is <strong>${{ fee_ind }} for individual therapy</strong>, in person or by video, and <strong>${{ fee_cpl }} for couples therapy</strong>, which is in person only. Most clients attend one visit per week, but the frequency that is right for you may be more or less, depending on your needs. Based on those fees, these are the expected charges:</p>
+    </div>
+    <table class="fee-table">
+      <caption>Expected charges at one 50-minute session per week</caption>
+      <thead>
+        <tr><th scope="col">Length of service</th><th scope="col" class="num">Individual</th><th scope="col" class="num">Couples</th></tr>
+      </thead>
+      <tbody>
+        {% assign rows = "1:1 week:|13:13 weeks:about 3 months|26:26 weeks:about 6 months|39:39 weeks:about 9 months|52:52 weeks:about 12 months" | split: "|" %}
+        {% for row in rows %}{% assign parts = row | split: ":" %}{% assign wk = parts[0] | plus: 0 %}{% assign a_ind = fee_ind | times: wk %}{% assign a_cpl = fee_cpl | times: wk %}
+        <tr><th scope="row">{{ parts[1] }}{% if parts[2] %}<span class="approx">{{ parts[2] }}</span>{% endif %}</th><td class="num">{% include money.html amount=a_ind %}</td><td class="num">{% include money.html amount=a_cpl %}</td></tr>{% endfor %}
+      </tbody>
+    </table>
+    <div class="prose">
+      <p>This is an estimate, not a contract. It does not obligate you to obtain any services, and it is not a recommendation for treatment or a prediction of how many visits you may need. Your total cost depends on the number of sessions you attend and the services you receive. You may discontinue treatment at any time.</p>
+      <p>Walnut Creek Therapists is a private-pay practice and does not bill insurance. On request, we provide a superbill that you can submit to your insurer for possible out-of-network reimbursement. The practice has opted out of Medicare.</p>
+      <p>To request an individual Good Faith Estimate, call <a href="tel:{{ site.phone_e164 }}">{{ site.phone }}</a>.</p>
+    </div>
+  </div>
+</section>

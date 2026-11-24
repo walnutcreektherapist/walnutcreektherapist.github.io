@@ -23,9 +23,13 @@ address:
   zip: "94596"
 
 hours: "Weekdays, 9am to 5:45pm"
+# Session fees, in dollars — numbers only, no "$". Change these each January and
+# the Contact page fees and the whole Good Faith Estimate table on /fees/ update
+# themselves. (Also update the insurance answer in contact.html's FAQ and llms.txt,
+# which repeat the fees as plain text.)
 fees:
-  individual: "$275 per 50-minute hour"
-  couples: "$305 per 50-minute hour"
+  individual: 275
+  couples: 305
 
 # Standing-appointment openings. Update each week: change "as_of" and edit the slots.
 #
